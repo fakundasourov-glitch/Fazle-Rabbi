@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bodoni Moda", Georgia, serif;
+  --font-headline: "Bodoni Moda", Georgia, serif;
+  --font-body: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-label: "Space Mono", monospace;
+  --font-mono: "Space Mono", monospace;
+
+  --color-surface: #131313;
+  --color-surface-lowest: #0e0e0e;
+  --color-surface-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-surface-high: #2a2a2a;
+  --color-surface-highest: #353534;
+  --color-primary: #e5c484;
+  --color-primary-container: #c8a96b;
+  --color-outline: #998f81;
+  --color-outline-variant: #4d463a;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #d0c5b5;
+  --color-secondary: #c7c6c6;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-body), sans-serif;
+  background-color: #131313;
+  color: #e5e2e1;
+}
+
+/* Custom scrollbar and utility classes */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e0e0e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #353534;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c8a96b;
+}
+
+.font-serif-display {
+  font-family: "Bodoni Moda", Georgia, serif;
+}
+
+.font-tech-mono {
+  font-family: "Space Mono", monospace;
+}
+
